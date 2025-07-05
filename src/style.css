@@ -1,10 +1,61 @@
-body{
-    background-color: rgb(255, 230, 200) ;
+*{
+    padding: 0%;
+    margin: 0%;
 }
-
+body{
+    background-color: rgb(250, 160, 160) ;
+}
+#area{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 22em;
+    align-items: center;
+    height: 100vh;
+}
 #text{
     width: 20em;
     height: 18em;
     border-radius: 5px;
 }
+#textarea{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(109, 134, 134);
+    border-radius: 0.5em;
+    padding: 2em 1em;
+}
+#historyarea{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: start;
+    background-color: rgb(255, 245, 154);
+    width: 15em ;
+    height: 23em;
+    border-radius: 0.5em;
+}
 
+h1{
+    text-align: center;  
+    margin: 1em;
+}
+p{
+    margin: 10px 8px;
+
+}
+button{
+    width: 20em;
+    margin: 5px;
+    height: 2em;
+    color: aliceblue;
+    font-weight: lighter;
+    border: none;
+    border-radius: 5px;
+}
+#buttonsave{
+    background-color: rgb(187, 174, 54);
+}
+#buttonclear{
+    background-color: rgb(228, 77, 77);
+}

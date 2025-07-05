@@ -7,13 +7,18 @@
     <title>Annotation</title>
 </head>
 <body>
+    <div id="area">
+    <div id="textarea">
     <h1>Minhas Anotações</h1>
     <textarea name="text" id="text" placeholder="Escreva as suas anotações aqui..."></textarea>
     <br><br>
-    <button onclick="save()">Salvar</button>
-    <button onclick="clearNote()">Limpar</button>
+    <button id="buttonsave" onclick="save()">Salvar</button>
+    <button id="buttonclear"onclick="clearNote()">Limpar</button>
+    </div>
+    <div id="historyarea">
     <h1>Histórico</h1>
     <p id="history"></p>
+    </div>
     <script src="src/script.js"></script>
 </body>
 </html>
