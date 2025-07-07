@@ -29,17 +29,22 @@ noteEl.innerHTML = `
 
 // Quando clicar na lixeira
 noteEl.querySelector('.delete-btn').onclick = () => {
+    const confirmar = confirm("Tem certeza que deseja apagar esta nota?");
+    if(confirmar){
 // Remove a anotação da página
     notes.splice(index, 1);
 // Remove a anotação do LocalStorage
     localStorage.setItem('notes', JSON.stringify(notes));
 // Remove a janelinha da anotação
     noteEl.remove();
-};
+    }
+    };
 // Quando cliar em minimizar
 noteEl.querySelector('.minimize-btn').onclick = () => {
 // O conteúdo desaparece ("display:none" é ativo)
     noteEl.classList.toggle('minimized');
+    noteEl.classList.toggle('minimizedwh')
+    
 };
 //Ao soltar o mouse, ele tornar-se falso
 let isDragging = false;
